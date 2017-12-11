@@ -29,7 +29,8 @@ $(function() {
 		$.ajax("/api/burgers", {
 			type: "POST",
 			data: newBurger
-		}).then(function() {
+		}).then(
+			function() {
 			console.log("created new burger");
 			location.reload();
 		}
